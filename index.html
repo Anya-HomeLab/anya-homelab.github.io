@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anya Homelab</title>
+    <style>
+        /* Basic Reset */
+        body, h1, p, div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variables for Colors */
+        :root {
+            --emerald: #00A96B; /* A vibrant emerald green */
+            --oceanic-blue: #0077B6; /* A deep oceanic blue */
+            --background-dark: #121212; /* Dark background */
+            --text-light: #E0E0E0; /* Light text color */
+        }
+
+        /* Body Styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Container for the logo and text */
+        .homelab-container {
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05); /* Slightly transparent background */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); /* Glass-like shadow */
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        /* Logo Styling */
+        .logo-text {
+            font-size: 3.5rem; /* Large font size for the "A" */
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 10px;
+            /* Creating the gradient effect across the letter */
+            background: linear-gradient(90deg, var(--emerald) 0%, var(--oceanic-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* Adding a subtle glow effect */
+            text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            letter-spacing: 5px; /* Spacing for a technical/modern look */
+        }
+
+        /* Sub-text styles */
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        /* List of services */
+        .services-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .services-list li a {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-light);
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--oceanic-blue);
+            transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+        }
+
+        .services-list li a:hover {
+            background-color: var(--oceanic-blue);
+            border-color: var(--emerald);
+            transform: translateY(-2px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 119, 182, 0.6);
+        }
+
+        /* Footer/Credits */
+        .footer {
+            margin-top: 50px;
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="homelab-container">
+        <div class="logo-text">A</div>
+        <h1>ANYA HOMELAB</h1>
+        <p>A central hub for my personal media server, automation stack, and self-hosted applications.</p>
+        
+        <ul class="services-list">
+            <li><a href="#" target="_blank">Jellyfin Media</a></li>
+            <li><a href="#" target="_blank">Radarr</a></li>
+            <li><a href="#" target="_blank">Sonarr</a></li>
+            <li><a href="#" target="_blank">Prowlarr</a></li>
+            <li><a href="#" target="_blank">Dashboards (e.g., Heimdall)</a></li>
+            <li><a href="#" target="_blank">Other Services...</a></li>
+        </ul>
+        
+        <p class="footer">Powered by Self-Hosting. Deployed via GitHub Pages.</p>
+    </div>
+</body>
+</html>

@@ -1,2 +1,1 @@
-# anya-homelab.github.io
-About Page
+<img src="assets/anya-logo-removebg-preview.png" alt="Anya Homelab logo" class="logo-img" />
